@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+.hero {
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+.cta-button {
+  background: white;
+  color: #007cf0;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.features, .testimonials, .contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px;
+}
+.carousel {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+.testimonial {
+  display: none;
+  font-style: italic;
+  font-size: 1.2em;
+}
+.testimonial.active {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  border: none;
+  background: #007cf0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
