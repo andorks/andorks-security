@@ -33,25 +33,19 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
+<section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xrebyvby"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-  </section>
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/xrebyvby"
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+</section>
 
   <footer>
     <p>&copy; 2025 Andorks Security. All rights reserved.</p>
