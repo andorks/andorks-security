@@ -8,11 +8,3 @@ function showNextTestimonial() {
 }
 
 setInterval(showNextTestimonial, 4000);
-
-// Contact form logic
-const form = document.getElementById('contact-form');
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert('Thank you for contacting us!');
-  form.reset();
-});
